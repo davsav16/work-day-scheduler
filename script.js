@@ -46,6 +46,33 @@ function persistInput() {
 };
 
 function pageLoad() {
+    if(localStorage.getItem("text09")===null){
+        localStorage.setItem("text09", "");
+    } else if (localStorage.getItem("text10")===null){
+        localStorage.setItem("text10", "");
+    }else if (localStorage.getItem("text11")===null){
+        localStorage.setItem("text11", "");
+    }else if (localStorage.getItem("text12")===null){
+        localStorage.setItem("text12", "");
+    } else if (localStorage.getItem("text13")===null){
+        localStorage.setItem("text13", "");
+    }else if (localStorage.getItem("text14")===null){
+        localStorage.setItem("text14", "");
+    }else if (localStorage.getItem("text15")===null){
+        localStorage.setItem("text15", "");
+    }else if (localStorage.getItem("text16")===null){
+        localStorage.setItem("text16", "");
+    }else if (localStorage.getItem("text17")===null){
+        localStorage.setItem("text17", "");
+    }else if (localStorage.getItem("text18")===null){
+        localStorage.setItem("text18", "");
+    }else if (localStorage.getItem("text19")===null){
+        localStorage.setItem("text19", "");
+    }else if (localStorage.getItem("text20")===null){
+        localStorage.setItem("text20", "");
+    }
+
+
     var returnedItems = [];
     for (var i = 9; i < 21; i++) {
         if (i === 9) {
@@ -66,10 +93,16 @@ function pageLoad() {
         document.getElementById("18").innerHTML += JSON.parse(localStorage.getItem("text18"));
         document.getElementById("19").innerHTML += JSON.parse(localStorage.getItem("text19"));
         document.getElementById("20").innerHTML += JSON.parse(localStorage.getItem("text20"));
-    // })
+
 };
 
 pageLoad();
+
+var loaded =0
+if (loaded === 0){
+    loaded + 1;
+
+}
 
 
 
